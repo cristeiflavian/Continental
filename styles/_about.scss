@@ -1,0 +1,80 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        max-width: 300px !important;
+        height: 320px;
+        box-shadow: 5px 10px 10px;
+    }
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        max-width:500px;
+    }
+    .about-us{
+        width:96%;
+        p{
+            padding-right: 30px;
+            text-indent: 15px;
+        }
+        .title-text{
+            color: #111;
+            font-size: 2em;
+            font-weight: 300;
+        }
+        span {
+            color:$btnColor;
+            font-weight: 700;
+            font-size: 1.5em;
+          }
+    }
+
+    .contactForm {
+        text-align: center; /* Center-align the button if needed */
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+    
+    .contactForm button#sendButton {
+        background-color: #007BFF; /* Button background color */
+        color: #ffffff; /* Text color */
+        padding: 12px 24px; /* Adjust padding as needed */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Add rounded corners */
+        cursor: pointer; /* Show pointer cursor on hover */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+        font-size: 16px; /* Font size */
+    }
+    
+    /* Style the button on hover */
+    .contactForm button#sendButton:hover {
+        background-color: #0056b3; /* Change this to the hover color you prefer */
+        transform: scale(1.05); /* Add a slight scale effect on hover */
+    }
+    
+  }
+
+// @media screen and (max-width:700px){
+//     .about{
+//         flex-direction:column;
+//         text-align:center;
+//         padding:0;
+//         margin-top:30px;
+//         img{
+//             //width:300px;
+//             height:170px;
+//             padding-top:10px;
+//         }
+//     }
+// }
+
+@media screen and (max-width:500px){
+    .about{
+        .about-us{
+            p{
+                padding-right:0px;
+                text-indent:0;
+            }
+        }
+    }
+}

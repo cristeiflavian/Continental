@@ -1,0 +1,35 @@
+footer{
+    margin-top:-30px;
+    max-width: 100%;
+    height:100%;
+    background-color:rgb(241, 238, 238);
+    padding:10px 30px;
+    .footer-details{
+        display:flex;
+        justify-content:space-between;
+        .column{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+           h3, p{
+               color:#232523;
+           }
+           .inline{
+               img{
+                   margin-right:10px;
+                   cursor:pointer;
+               }
+           }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .footer-details{
+        flex-direction:column;
+        text-align:center;
+        .column{
+            margin-top:10px;
+        }
+    }
+}

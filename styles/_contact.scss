@@ -1,0 +1,94 @@
+.contact{
+    margin-top:-100px;
+    .forms{
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+    }
+    .contact-motto{
+        text-align:center;
+        .title-text{
+            color: #111;
+            font-size: 2em;
+            font-weight: 300;
+        }
+        span {
+            color:$btnColor;
+            font-weight: 700;
+            font-size: 1.5em;
+          }
+    }
+    .contactForm {
+        padding: 25px 50px;
+        background: #fff;
+        box-shadow: 0 15px 30px $btnColor;
+        max-width: 500px;
+        margin-top: 50px;
+        flex-grow: 2;
+        h3 {
+            color: #111;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-weight: 500;
+          }
+          .inputBox {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            input, textarea{
+                width: 100%;
+                border: 1px solid #555;
+                padding: 10px;
+                color: #111;
+                outline: none;
+                font-size: 16px;
+                font-weight: 300;
+                resize: none;
+                border-radius:10px;
+            }
+            input[type="submit"]{
+                font-size: 1em;
+                color: #fff;
+                background:$btnColor;
+                display: inline-block;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 2px;
+                max-width: 100px;
+                font-weight: 500;
+                border: none;
+                cursor: pointer;
+                transition:0.5s;
+                border-radius:10px;
+                &:hover{
+                    letter-spacing:6px;
+                }
+            }
+          }
+      }
+}
+
+@media screen and (max-width:700px){
+    .contactForm{
+        h3{
+            text-align:center;
+        }
+        .inputBox{
+            text-align:center;
+        }
+    }
+
+    .contact{
+        .forms{
+            img{
+                display:none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .contact{
+        padding:50px;
+    }
+}
